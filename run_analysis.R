@@ -6,7 +6,7 @@ urlDataset <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 nameFileArchive <- "FUCI_HAR_Dataset.zip"
 nameDataDirectory <- "data"
 nameDataUCIDirectory <- paste(nameDataDirectory, "UCI\ HAR\ Dataset", sep = "/")
-nameFileTidyDataset <- paste(nameDataDirectory, "FUCI_HAR_Dataset_Tidy.csv", sep = "/")
+nameFileTidyDataset <- paste(nameDataDirectory, "FUCI_HAR_Dataset_Tidy.txt", sep = "/")
 
 # Reads specified datasets, bind data to one dataframe
 # Parameters:
@@ -71,4 +71,4 @@ dtTidy <- dtAll %>%
         group_by(Activity, Subject, Variable) %>% 
         summarise(mean(Value))
 
-write.csv(dtTidy, file = nameFileTidyDataset)
+write.table(dtTidy, file = nameFileTidyDataset, row.names=FALSE)

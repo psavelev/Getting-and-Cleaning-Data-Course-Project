@@ -9,7 +9,7 @@ The data preparation script is implemented in **run_analysis.R**, which does the
 3. Creates vectors with features and their approprate names which contaits 'mean' and 'std'. They will be used to select the only data whcih containts mean and standard deviations from the datasets.
 4. Reads Testing and training datasets, mearges botth datasets to one. Appropriately labels the data set with descriptive variable names are used. Descriptive activity names are set in the data set
 5. Creates independent tidy data set with the average of each variable for each activity and each subject.
-6. Saves tidy dataset to FUCI_HAR_Dataset_Tidy.csv (which is submitted to Coursera)
+6. Saves tidy dataset to FUCI_HAR_Dataset_Tidy.txt (which is submitted to Coursera)
 
 The original dataset was published by:
 
